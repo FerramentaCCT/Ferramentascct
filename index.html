@@ -13,13 +13,11 @@ body {
     padding: 10px;
 }
 
-/* Container mobile */
 .container {
     max-width: 480px;
     margin: auto;
 }
 
-/* Tabela */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -33,7 +31,6 @@ th, td {
     font-size: 14px;
 }
 
-/* Títulos */
 th {
     background: #666;
     color: #fff;
@@ -47,7 +44,27 @@ th {
     line-height: 1.4;
 }
 
-/* Inputs mobile */
+/* CABEÇALHO COM LOGO */
+.cabecalho {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 90px;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .logo {
+        width: 70px;
+    }
+}
+
 input {
     width: 100%;
     border: none;
@@ -58,7 +75,6 @@ input {
     border-radius: 6px;
 }
 
-/* Resultado */
 .resultado {
     background: yellow;
     font-weight: bold;
@@ -66,12 +82,10 @@ input {
     font-size: 16px;
 }
 
-/* Melhor leitura */
 td:first-child {
     font-weight: bold;
 }
 
-/* Evita quebrar layout */
 td, th {
     word-break: break-word;
 }
@@ -84,7 +98,9 @@ td, th {
 
 <table>
 <tr>
-    <th colspan="3" class="titulo">
+    <th colspan="3" class="titulo cabecalho">
+        <img src="logo.png" class="logo">
+
         VASÃO<br>
         TEMPO COLHEITA +<br>
         TEMPO DESLOCAMENTO +<br>
